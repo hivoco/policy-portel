@@ -55,7 +55,7 @@ const policies = [
     id: 9,
     policyName: "  Hivoco Quarterly Security Review Policy",
     actions: "View Policy",
-    href: "policies/security-policy",
+    href: "policies/quarterly-security-policy",
   },
 
   {
@@ -69,7 +69,7 @@ const policies = [
     id: 11,
     policyName: "Hivoco Data Backup and Management Policy",
     actions: "View Policy",
-    href: "policies/security-policy",
+    href: "policies/data-backup-management-policy",
   },
   {
     id: 12,
@@ -89,19 +89,19 @@ const policies = [
     id: 14,
     policyName: "Hivoco Data Anonymization Policy",
     actions: "View Policy",
-    href: "policies/security-policy",
+    href: "policies/data-anonymization-policy",
   },
   {
     id: 15,
     policyName: "Hivoco Infrastructure Redundancy Policy",
     actions: "View Policy",
-    href: "policies/security-policy",
+    href: "policies/infrastructure-redundancy-policy",
   },
   {
     id: 16,
     policyName: "Hivoco Data Segmentation and Encryption Policy",
     actions: "View Policy",
-    href: "policies/security-policy",
+    href: "policies/data-segmentation-and-encryption-policy",
   },
 ];
 
