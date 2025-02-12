@@ -1,4 +1,5 @@
-export const policies = [
+export 
+const policies = [
   {
     id: 1,
     policyName: "Hivoco Information Security Policy",
@@ -42,35 +43,29 @@ export const policies = [
     href: "policies/change-management-policy",
   },
 
-  {
-    id: 8,
-    policyName: "Hivoco Change Management Policy",
-    actions: "View Policy",
-    href: "policies/change-management-policy",
-  },
 
   {
-    id: 9,
+    id: 8,
     policyName: "  Hivoco Quarterly Security Review Policy",
     actions: "View Policy",
     href: "policies/security-policy",
   },
 
   {
-    id: 10,
+    id: 9,
     policyName: "Hivoco Quarterly Security Compliance Review Policy",
     actions: "View Policy",
     href: "policies/quarterly-compliance-policy",
   },
 
   {
-    id: 11,
+    id: 10,
     policyName: "Hivoco Data Backup and Management Policy",
     actions: "View Policy",
     href: "policies/security-policy",
   },
   {
-    id: 12,
+    id: 11,
     policyName:
       "Hivoco System Acquisition, Development, and Maintenance Policy",
     actions: "View Policy",
@@ -78,25 +73,25 @@ export const policies = [
   },
 
   {
-    id: 13,
+    id: 12,
     policyName: "Hivoco Data Encryption Policy",
     actions: "View Policy",
     href: "policies/data-encryption-policy",
   },
   {
-    id: 14,
+    id: 13,
     policyName: "Hivoco Data Anonymization Policy",
     actions: "View Policy",
     href: "policies/security-policy",
   },
   {
-    id: 15,
+    id: 14,
     policyName: "Hivoco Infrastructure Redundancy Policy",
     actions: "View Policy",
     href: "policies/security-policy",
   },
   {
-    id: 16,
+    id: 15,
     policyName: "Hivoco Data Segmentation and Encryption Policy",
     actions: "View Policy",
     href: "policies/security-policy",
