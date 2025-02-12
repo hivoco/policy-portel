@@ -4,49 +4,49 @@ const employees = [
   {
     id: 1,
     name: "Ananya Garg",
-    policy: "14/16 Policies Completed",
+    policy: "14/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 2,
     name: "Varun Gupta",
-    policy: "08/16 Policies Completed",
+    policy: "08/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 3,
     name: "Himanshu Parihar",
-    policy: "11/16 Policies Completed",
+    policy: "11/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 4,
     name: "Ranjan Mehta",
-    policy: "07/16 Policies Completed",
+    policy: "07/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 5,
     name: "Irfan Ahmed",
-    policy: "15/16 Policies Completed",
+    policy: "15/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 6,
     name: "Krishna Murari Yadav",
-    policy: "09/16 Policies Completed",
+    policy: "09/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 7,
     name: "Ann Afreen",
-    policy: "10/16 Policies Completed",
+    policy: "10/15 Policies Completed",
     actions: "View Details",
   },
   {
     id: 8,
     name: "Malvika",
-    policy: "12/16 Policies Completed",
+    policy: "12/15 Policies Completed",
     actions: "View Details",
   },
 ];
@@ -61,6 +61,9 @@ const AdminTable = ({employeesData,searchTerm}) => {
       ?.trim()
       ?.includes(searchTerm.toLowerCase().trim());
   });
+
+  // console.log(filteredData,'f d');
+  
   
   return (
     <table className="w-full table-auto ">
@@ -114,7 +117,7 @@ const AdminTable = ({employeesData,searchTerm}) => {
         </tr>
       </thead>
       <tbody>
-        {filteredData?.map((employee, index) => (
+        {filteredData?.map((employee, index) => (          
           <tr
             key={employee._id}
             style={{
@@ -149,7 +152,7 @@ const AdminTable = ({employeesData,searchTerm}) => {
               style={{ padding: "20px 16px", textAlign: "left" }}
               className="px-4 py-6 text-left"
             >
-              {employee?.policiesCount}/16 Policies Completed
+              {employee?.policiesCount}/15 Policies Completed
             </td>
 
             <td
@@ -161,19 +164,25 @@ const AdminTable = ({employeesData,searchTerm}) => {
               className="px-4 py-6 font-bold text-left"
             >
               <Link
-                className=""
-                style={{ color: "#1658FF", textDecorationLine: "underline" }}
+                className="text-blue-600 underline"
                 href={{
                   pathname: "/employee-profile",
                   query: {
-                    name: employee?.name,
-                    email: employee?.email,
-                    employeeId: employee?._id,
+                    name: employee?.auth_id?.name ?? "",
+                    email: employee?.auth_id?.email ?? "",
+                    employeeId: employee?.auth_id?._id ?? "",
                   },
                 }}
               >
                 View Details
+
+
               </Link>
+
+              {
+                                      console.log(employee,"employee")
+
+              }
             </td>
           </tr>
         ))}
