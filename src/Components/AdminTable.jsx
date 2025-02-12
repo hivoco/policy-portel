@@ -179,10 +179,10 @@ const AdminTable = ({employeesData,searchTerm}) => {
 
               </Link>
 
-              {
+              {/* {
                                       console.log(employee,"employee")
 
-              }
+              } */}
             </td>
           </tr>
         ))}
